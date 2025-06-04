@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images" href="assets/software.png">
+    <title>Abraham | porfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="spinner"></div>
+        <p>Loading…</p>
+    </div>
+
+    <header class="main-header">
+        <div class="contained header-container">
+            <div class="logo">
+                <h1>Abraham | <span>Unyime</span></h1>
+            </div>
+
+            <nav class="nav-menu">
+                <!-- <div class="menu">
+                    <div class="menu-line"></div>
+                    <h4 class="menu-head">MENU</h4>
+                    <div class="menu-line"></div>
+                </div> -->
+
+                <ul class="nav-links">
+                    <li><a href="#home"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+                    <li><a href="#about"><i class="fa-solid fa-user"></i><span>About Me</span></a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-code"></i><span>Skills</span></a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-phone"></i><span>Contact</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger" id="hamburger" aria-label="Toggle Navigation" role="button" tabindex="0">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="contain">
+            <div class="hero-text" data-aos="fade-right">
+                <h3 id="greeting">Welcome!</h3>
+                <h2>Hi, I’m <span class="highlight">Abraham</span></h2>
+                <p>
+                    I’m a frontend developer who turns caffeine into clean,<br />
+                    interactive websites. I speak fluent HTML, CSS, JavaScript —<br />
+                    and love making pixels dance!
+                </p>
+                <a href="#contact" class="btn" id="hireMeBtn">Hire Me</a>
+            </div>
+
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
+                <img src="assets/hero-image.jpg" alt="Abraham" />
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h1>About Me</h1>
+                <div class="line"></div>
+
+                <p>
+                    Hello! I’m <strong>Abraham Unyime</strong>, a passionate frontend developer who believes that great
+                    websites are the perfect blend of art and technology. I specialize in crafting clean, efficient code
+                    that powers beautiful, interactive, and user-friendly web experiences.
+                </p>
+
+                <p>
+                    With a keen eye for design and a playful spirit, I love transforming complex ideas into elegant
+                    layouts
+                    that feel intuitive and enjoyable to explore. When I’m not busy making pixels dance with HTML, CSS,
+                    and
+                    JavaScript, you’ll find me experimenting with new tools and techniques to stay ahead in this
+                    ever-evolving web world.
+                </p>
+
+                <p>
+                    I’m dedicated to building websites that don’t just look good but also bring ideas to life and leave
+                    a
+                    lasting impression. Let’s make the web a more vibrant, engaging place — one line of code at a time!
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h1>My Skills</h1>
+                <p class="section-subtitle">Languages I use to bring ideas to life</p>
+            </div>
+
+            <div class="skills-flex">
+                <div class="skill-card" data-aos="fade-right" data-aos-delay="100">
+                    <i class="fa-brands fa-html5 skill-icon" style="color: #e44d26;"></i>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup for clean, accessible, and SEO-friendly structure.</p>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-brands fa-css3-alt skill-icon" style="color: #264de4;"></i>
+                    <h3>CSS3</h3>
+                    <p>Crafting pixel-perfect, responsive layouts and elegant animations.</p>
+                </div>
+
+                <div class="skill-card" data-aos="fade-left" data-aos-delay="300">
+                    <i class="fa-brands fa-js-square skill-icon" style="color: #f7df1e;"></i>
+                    <h3>JavaScript</h3>
+                    <p>Adding interactivity, logic, and dynamic magic to every website.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content" data-aos="fade-up">
+                <div class="contact-info">
+                    <h2>Let's Connect</h2>
+                    <p>Got a project, question, or just want to say hi? I’d love to hear from you!</p>
+
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> +234 810 8594 179</li>
+                        <li><i class="fa-solid fa-envelope"></i> abraham2006etim@gmail.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Lagos State, Nigeria</li>
+                    </ul>
+                </div>
+
+                <form id="contactForm" class="contact-form" method="POST" data-aos="fade-left" data-aos-delay="200">
+                    <div class="input-group">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+
+                    <!-- Hidden fields -->
+                    <input type="hidden" name="_subject" value="New message from portfolio site">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Abraham <span>Unyime</span></h2>
+                <p>Frontend Developer | Turning code into art ✨</p>
+            </div>
+
+
+
+            <div class="footer-social">
+                <a href="https://www.facebook.com/abraham.unyime.2025" target="_blank" aria-label="Facebook"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/abraham-etim-a47695309/" target="_blank" aria-label="LinkedIn"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/abraham_unyime" target="_blank" aria-label="Instagram"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+            <div class="footer-copy">
+                <p>&copy; <span id="year"></span> Abraham Unyime. All rights reserved.</p>
+            </div>
+
+            <div class="footer-tools">
+                <button id="scrollToTop" aria-label="Back to Top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+                <button id="themeToggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Links -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
